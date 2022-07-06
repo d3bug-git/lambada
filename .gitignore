@@ -1,19 +1,23 @@
-# Logs
-logs
-*.log
-npm-debug.log*
 
-# Dependency directory
-**/node_modules/**
-_node_modules
-.pnp.cjs
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
 
-# Coverage directory used by tools like istanbul
-coverage
+# Other files and folders
+.settings/
 
-.tmp
-_docpress
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
 
+.vs
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
 lib
 dist
 tsconfig.tsbuildinfo
