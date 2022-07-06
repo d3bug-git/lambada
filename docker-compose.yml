@@ -1,5 +1,14 @@
-services: 
-  serverweb:
+services:
+  app:
+    volumes:
+      - ./:/lambada
+    build: .
+    ports:
+      - "3000:3000"
+      - "3333:3333"
+    
+
+  server:
     image: nginx:1-alpine
     ports:
       - "8080:80"
@@ -22,6 +31,9 @@ services:
     ports:
      - "1025:1025"
      - "8025:8025" 
+
+
+  
     
 
    
