@@ -1,6 +1,8 @@
 FROM node:18-alpine
-RUN npm install -g pnpm
 WORKDIR /lambada 
 COPY . .
-CMD [ "tail","-f","/dev/null" ]
+RUN npm install -g pnpm && \
+    pnpm install
+CMD [ "pnpm","--parallel","--filter","@lambada/*","run","dev" ]
 EXPOSE 3000
+EXPOSE 3333

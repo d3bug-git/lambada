@@ -50,4 +50,6 @@ RELEASE.md
 tmp
 
 # Environment variables, never commit this file
-.env
+.env!/
+.pnpm-store/
+/node_modules/
