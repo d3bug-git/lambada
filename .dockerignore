@@ -1,0 +1,59 @@
+
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
+.vs
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
+lib
+dist
+tsconfig.tsbuildinfo
+
+# Visual Studio Code configs
+.vscode/
+
+# JetBrains IDEs
+.idea/
+.history
+
+# pnpm uses npm for publishing a new version with
+# dependencies bundled but the npm lockfile is not needed
+# because pnpm use pnpm for installation
+package-lock.json
+
+__package_previews__
+.store
+
+privatePackages/store
+
+## Verdaccio storage
+storage
+
+yarn.lock
+
+RELEASE.md
+
+.jest-cache
+.verdaccio-cache
+.turbo
+
+# Adonis directory for storing tmp files
+tmp
+
+# Environment variables, never commit this file
+.env!/
+.pnpm-store/
+/node_modules/
